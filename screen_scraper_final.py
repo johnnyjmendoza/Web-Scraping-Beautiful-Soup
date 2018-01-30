@@ -47,14 +47,14 @@ for container in containers:
     shipping_container = container.findAll("li",{"class":"price-ship"})
     shipping = shipping_container[0].text.strip()
 
-# print each product with the brand, product name and shipping cost
-print("price: " + price)
-print("product name: " + product_name)
-print("shipping: " + shipping)
+    # print each product with the brand, product name and shipping cost
+    print("price: " + price)
+    print("product name: " + product_name)
+    print("shipping: " + shipping)
 
-# when writing each section, add a comma, replace comma with pipe,
-# add new line after shipping
-f.write(price + "," + product_name.replace(",", "|") + "," + shipping + "\n")
+    # when writing each section, add a comma, replace comma with pipe,
+    # add new line after shipping
+    f.write(price + "," + product_name.replace(",", "|") + "," + shipping + "\n")
 
 # close the f.write with f.close
 f.close()
