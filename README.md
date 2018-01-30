@@ -1,4 +1,4 @@
-# Web-Scraping-BeautifulSoup
+# Web-Scraping-Beautiful-Soup
 
 Python script that uses Beautiful Soup screen scraping library to grab data from a Newegg.com web-page and add it to a CSV file. The file examines the web page for specific DOM elements (description, price, shipping). 
 
